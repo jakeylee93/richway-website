@@ -45,18 +45,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-amber rounded flex items-center justify-center">
-              <span className="text-white text-xs font-bold">R</span>
-            </div>
-            <span
-              className={`font-serif text-xl font-bold tracking-widest transition-colors ${
-                scrolled || menuOpen ? "text-charcoal" : "text-white"
-              }`}
-              style={{ fontFamily: "var(--font-serif)" }}
-            >
-              RICHWAY
-            </span>
+          <Link href="/" className="flex items-center group">
+            <img
+              src={scrolled || menuOpen ? "/logo.png" : "/logo-white.png"}
+              alt="Richway Lofts & Extensions"
+              className="h-10 lg:h-12 w-auto transition-all"
+            />
           </Link>
 
           {/* Desktop Nav */}

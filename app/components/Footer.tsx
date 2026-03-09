@@ -28,13 +28,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-amber rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">R</span>
-              </div>
-              <span className="font-serif text-xl font-bold tracking-widest">
-                RICHWAY
-              </span>
+            <div className="mb-4">
+              <img src="/logo-white.png" alt="Richway" className="h-10 w-auto" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               Transforming London & Essex homes for over 30 years. House
